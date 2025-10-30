@@ -1,0 +1,100 @@
+components:
+  schemas:
+    EnvioIn:
+      additionalProperties: false
+      properties:
+        cliente:
+          type: string
+        direccion:
+          type: string
+        estado:
+          type: string
+        id_envio:
+          type: string
+      required:
+        - cliente
+        - direccion
+        - estado
+        - id_envio
+      type: object
+    HTTPError:
+      properties:
+        detail:
+          type: object
+        message:
+          type: string
+      type: object
+    ValidationError:
+      properties:
+        detail:
+          properties:
+            <location>:
+              properties:
+                <field_name>:
+                  items:
+                    type: string
+                  type: array
+              type: object
+          type: object
+        message:
+          type: string
+      type: object
+info:
+  title: APIFlask
+  version: 0.1.0
+openapi: 3.0.3
+paths:
+  /envios:
+    get:
+      parameters: []
+      responses:
+        "200":
+          content:
+            application/json:
+              schema: {}
+          description: Successful response
+      summary: Get Envios
+    post:
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/EnvioIn"
+      responses:
+        "200":
+          content:
+            application/json:
+              schema: {}
+          description: Successful response
+        "422":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ValidationError"
+          description: Validation error
+      summary: Create Envio
+  /envios/{envio_id}:
+    get:
+      parameters:
+        - in: path
+          name: envio_id
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          content:
+            application/json:
+              schema: {}
+          description: Successful response
+        "404":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/HTTPError"
+          description: Not found
+      summary: Get Envio By Id
+servers:
+  - url: http://localhost:5000/
+tags: []
