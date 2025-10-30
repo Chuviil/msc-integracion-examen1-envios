@@ -64,15 +64,7 @@ python src\api\app.py
 
 Esta opción verifica que exista `src/data/envios.json` y, si falta, intenta ejecutarlo con Java automáticamente. Requiere tener el `.jar` de Camel disponible como `src/file-transfer/file-transfer.jar`.
 
-1) Construye el `.jar` y colócalo con el nombre esperado:
-
-```cmd
-cd src\file-transfer
-mvn -q -DskipTests package
-copy /Y target\file-transfer-1.0-SNAPSHOT.jar file-transfer.jar
-```
-
-2) Inicia el API que se encarga de todo (desde la raíz del repo):
+1) Inicia el API que se encarga de todo (desde la raíz del repo):
 
 ```cmd
 set HOST=0.0.0.0
