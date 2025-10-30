@@ -120,8 +120,3 @@ Usa `IntegracionExamen1Envios.postman_collection.json` para probar los endpoints
 - Si `python src\api\full.py` falla con "Java runtime not found", instala Java 17 y asegúrate de que `java` esté en el PATH.
 - Puerto en uso: cambia `PORT` (por ejemplo, `set PORT=8000`).
 - Rutas relativas: `full.py` ejecuta el `.jar` con el directorio de trabajo `src/file-transfer` para que Camel lea `envios.csv` (raíz del repo) y escriba `src/data/envios.json` correctamente.
-
-## Desarrollo rápido
-
-- Ejecutar pruebas manuales: lanza la API y usa la colección de Postman o `curl`.
-- Logs: tanto la app Python como Camel registran eventos útiles en consola.
