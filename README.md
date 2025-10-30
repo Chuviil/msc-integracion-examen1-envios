@@ -103,7 +103,7 @@ Respuestas relevantes:
 
 ## Colección Postman
 
-Usa `IntegracionExamen1Envios.postman_collection.json` para probar los endpoints localmente.
+Usa `postman_collection.json` para probar los endpoints localmente.
 
 ## Stack tecnológico
 
