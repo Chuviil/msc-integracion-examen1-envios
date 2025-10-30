@@ -1,0 +1,300 @@
+{
+	"info": {
+		"_postman_id": "480a00a2-2a02-455d-ba47-f31ba896eeea",
+		"name": "Integracion Examen 1 Envios",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49660206",
+		"_collection_link": "https://chuviil-6729837.postman.co/workspace/Sebastian-Quito's-Workspace~ae8c5e6a-bf18-4ce0-8e84-3b135fa6215e/collection/49660206-480a00a2-2a02-455d-ba47-f31ba896eeea?action=share&source=collection_link&creator=49660206"
+	},
+	"item": [
+		{
+			"name": "Get Envios",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/envios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"envios"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Envios 29/10/2025 20:54",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/envios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"envios"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "297"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 30 Oct 2025 01:53:49 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "waitress"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"cliente\": \"Juan Pérez\",\n        \"direccion\": \"Calle 12 #45\",\n        \"estado\": \"Entregado\",\n        \"id_envio\": \"001\"\n    },\n    {\n        \"cliente\": \"María Gómez\",\n        \"direccion\": \"Avenida 10 #33\",\n        \"estado\": \"En tránsito\",\n        \"id_envio\": \"002\"\n    },\n    {\n        \"cliente\": \"Luis Mora\",\n        \"direccion\": \"Carrera 8 #22\",\n        \"estado\": \"Pendiente\",\n        \"id_envio\": \"003\"\n    }\n]"
+				},
+				{
+					"name": "Get Envios 29/10/2025 20:56",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/envios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"envios"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "389"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 30 Oct 2025 01:56:28 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "waitress"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"cliente\": \"Juan Pérez\",\n        \"direccion\": \"Calle 12 #45\",\n        \"estado\": \"Entregado\",\n        \"id_envio\": \"001\"\n    },\n    {\n        \"cliente\": \"María Gómez\",\n        \"direccion\": \"Avenida 10 #33\",\n        \"estado\": \"En tránsito\",\n        \"id_envio\": \"002\"\n    },\n    {\n        \"cliente\": \"Luis Mora\",\n        \"direccion\": \"Carrera 8 #22\",\n        \"estado\": \"Pendiente\",\n        \"id_envio\": \"003\"\n    },\n    {\n        \"cliente\": \"Sebastian Quito\",\n        \"direccion\": \"Sangolqui\",\n        \"estado\": \"Pendiente\",\n        \"id_envio\": \"010\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Get Envio By ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/envios/001",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"envios",
+						"001"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Envio By ID 29/10/2025 20:55",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/envios/001",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"envios",
+								"001"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "95"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 30 Oct 2025 01:54:34 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "waitress"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"cliente\": \"Juan Pérez\",\n    \"direccion\": \"Calle 12 #45\",\n    \"estado\": \"Entregado\",\n    \"id_envio\": \"001\"\n}"
+				},
+				{
+					"name": "Get Envio By ID 29/10/2025 20:57",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/envios/010",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"envios",
+								"010"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "92"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 30 Oct 2025 01:56:53 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "waitress"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"cliente\": \"Sebastian Quito\",\n    \"direccion\": \"Sangolqui\",\n    \"estado\": \"Pendiente\",\n    \"id_envio\": \"010\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Create Envio",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"cliente\": \"Sebastian Quito\",\r\n  \"direccion\": \"Sangolqui\",\r\n  \"estado\": \"Pendiente\",\r\n  \"id_envio\": \"010\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/envios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"envios"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create Envio 29/10/2025 20:56",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"cliente\": \"Sebastian Quito\",\r\n  \"direccion\": \"Sangolqui\",\r\n  \"estado\": \"Pendiente\",\r\n  \"id_envio\": \"010\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/envios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"envios"
+							]
+						}
+					},
+					"status": "CREATED",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "92"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 30 Oct 2025 01:55:43 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "waitress"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"cliente\": \"Sebastian Quito\",\n    \"direccion\": \"Sangolqui\",\n    \"estado\": \"Pendiente\",\n    \"id_envio\": \"010\"\n}"
+				}
+			]
+		}
+	]
+}
