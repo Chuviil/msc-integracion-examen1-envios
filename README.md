@@ -55,8 +55,6 @@ Esto leerá `envios.csv` (en la raíz del repo) y creará `src/data/envios.json`
 2) Inicia el API (desde la raíz del repo):
 
 ```cmd
-set HOST=0.0.0.0
-set PORT=5000
 python src\api\app.py
 ```
 
@@ -67,8 +65,6 @@ Esta opción verifica que exista `src/data/envios.json` y, si falta, intenta eje
 1) Inicia el API que se encarga de todo (desde la raíz del repo):
 
 ```cmd
-set HOST=0.0.0.0
-set PORT=5000
 python src\api\full.py
 ```
 
